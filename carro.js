@@ -13,7 +13,7 @@ function mostraCarro(){
 function movimentaCarro(){
     for(let i = 0; i < imagemCarros.length; i++){
         xCarros[i] -= velocidadeCarros[i];
-        }
+  }
 }
 
 function voltaPosicaoInicialDoCarro(){
@@ -21,7 +21,7 @@ function voltaPosicaoInicialDoCarro(){
         if(passouTodaATela(xCarros[i])){
                 xCarros[i] = 600;
         }
-    }
+  }
 }
 
 function passouTodaATela(xCarro){
