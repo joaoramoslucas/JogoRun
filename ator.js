@@ -18,7 +18,7 @@ function movimentaAtor(){
       yAtor += 3;
     }
   }
-    if (keyIsDown(LEFT_ARROW)){
+  if (keyIsDown(LEFT_ARROW)){
       xAtor -= 3;
   }
   if (keyIsDown(RIGHT_ARROW)){
