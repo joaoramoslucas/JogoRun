@@ -6,7 +6,7 @@ let alturaCarro = 40;
 
 function mostraCarro(){
     for(let i = 0; i < imagemCarros.length; i++){
-  image(imagemCarros[i], xCarros[i], yCarros[i], comprimentoCarro, alturaCarro);
+        image(imagemCarros[i], xCarros[i], yCarros[i], comprimentoCarro, alturaCarro);
   }
 }
 

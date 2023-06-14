@@ -15,11 +15,11 @@ function movimentaAtor(){
   }
   if (keyIsDown(DOWN_ARROW)){
     if (podeSeMover()){
-    yAtor += 3;
+      yAtor += 3;
     }
   }
     if (keyIsDown(LEFT_ARROW)){
-    xAtor -= 3;
+      xAtor -= 3;
   }
   if (keyIsDown(RIGHT_ARROW)){
     xAtor += 3;
@@ -36,7 +36,7 @@ function verificaColisao (){
         somDaColisao.play();
         if (pontosMaiorQueZero()){
               meusPontos -= 1;
-          }
+      }
     }
   }
 }
