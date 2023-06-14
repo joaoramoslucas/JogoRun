@@ -16,16 +16,16 @@ function movimentaAtor(){
     }
   }
   if (keyIsDown(LEFT_ARROW)){
-      xAtor -= 3;
+    xAtor -= 3;
   }
   if (keyIsDown(RIGHT_ARROW)){
     xAtor += 3;
   }
 }
 function verificaColisao (){ 
-  //collideRectCircle(x1, y1, width1, height1, cx, cy, diameter)
+  //collideRectCircle(x1, y1, width1, height1, cx, cy, diameter);
     for (i = 0; i < imagemCarros.length; i++){
-        colisao = collideRectCircle(xCarros[i], yCarros[i], comprimentoCarro, alturaCarro, xAtor, yAtor, 15)
+        colisao = collideRectCircle(xCarros[i], yCarros[i], comprimentoCarro, alturaCarro, xAtor, yAtor, 15);
       if (colisao){
         voltaAtorParaInicio();
         somDaColisao.play();
@@ -40,7 +40,7 @@ function voltaAtorParaInicio(){
     yAtor = 366;
 }
 function incluiPonto(){
-  fill(color(255,255,0))
+  fill(color(255,255,0));
   textAlign(CENTER);
   textSize(25);
   text(meusPontos, width / 4, 27);
